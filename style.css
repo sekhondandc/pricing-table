@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #292929;
+    font-family: 'Open Sans',sans-serif;
+}
+.pricing-table-wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+}
+.pricing-table{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+}
+.pricing-table *{
+    text-align: center;
+}
+.pricing-plan{
+    padding: 25px;
+    flex-basis: 100%;
+    border-right: 1px solid #eff1ff;
+}
+.pricing-plan:last-child{
+    border-right: none;
+}
+.pricing-icon{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: #f9fdff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-icon .icon{
+    width: 80px;
+    height: 80px;
+    background: #f0f7ff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-icon i{
+    font-size: 2em;
+    color: #4f9cf8;
+}
+.pricing-title{
+    margin-top: 25px;
+    color: #888888;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.pricing-features{
+    list-style: none;
+    margin: 25px 0 25px;
+    color: #4f9cf8;
+    font-weight: 600;
+}
+.pricing-features li{
+    border-top: 1px solid #e1f1ff;
+    font-size: 0.8em;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+.pricing-features li:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+.pricing-price{
+    display: block;
+    color: #4f9cf8;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.pricing-button{
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: 1px solid #4f9cf8;
+    color: #4f9cf8;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+.pricing-button.active{
+    background: #48aaff;
+    color: #ffffff;
+}
+.pricing-button:hover{
+    background: #e1f1ff;
+}
+.pricing-button.active:hover{
+    background: #269aff;
+}
